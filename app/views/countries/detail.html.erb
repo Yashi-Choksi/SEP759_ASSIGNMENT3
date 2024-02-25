@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <%= stylesheet_link_tag('detail.css') %>
+  <title>Beer Details</title>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-12">
+        <p><%= @countries[0]['name'] %> Details</p>
+        
+        <div class="details-container">
+          <div class="detail-row">
+            <strong>ID:</strong> <%= @countries[0]['id'] %>
+          </div>
+          <div class="detail-row">
+            <strong>Name:</strong> <%= @countries[0]['name'] %>
+          </div>
+          <div class="detail-row">
+            <strong>Tagline:</strong> <%= @countries[0]['tagline'] %>
+          </div>
+          <div class="detail-row">
+            <strong>Description:</strong> <%= @countries[0]['description'] %>
+          </div>
+          <div class="detail-row">
+            <strong>ABV:</strong> <%= @countries[0]['abv'] %>
+          </div>
+          <div class="detail-row">
+            <strong>Food Pairing:</strong>
+            <%= @countries[0]['food_pairing'][0] %>,
+            <%= @countries[0]['food_pairing'][1] %>,
+            <%= @countries[0]['food_pairing'][2] %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

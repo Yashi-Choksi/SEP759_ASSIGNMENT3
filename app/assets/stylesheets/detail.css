@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f2f1;
+}
+
+.details-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.detail-row {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.detail-row strong {
+  background-color: #f2f2f2;
+  display: inline-block;
+  width: 100px; 
+}
+
+p {
+  font-weight: bold;
+  font-size: 18px; 
+  margin-bottom: 10px;
+}
+
+.container {
+  text-align: left;
+}

@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag('index.css') %>
+<div class="container">
+	<table class="table table-bordered table-striped table-responsive table-hover">
+	<th class="table-heading" colspan=4><center>Beer Details</center></th>
+	<tr>
+		<th>Name</th>
+		<th>Tagline</th>
+		<th>Image</th>
+		<th>View Details</th>
+	</tr>
+	<% @countries.each do |country| %>
+	<tr>
+		<td><%= country['name'] %></a></td>
+		<td><%= country['tagline'] %></td>
+		<td><%= image_tag(country['image_url']) %></td>
+		<td><a href = "detail/<%= country['id'] %>"><button class="btn btn-info btn-sm">Click to view details</button></a></td>
+	</tr>
+	<% end %>
+</table>
+</div>

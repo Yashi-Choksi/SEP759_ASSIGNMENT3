@@ -1,6 +1,7 @@
 class CountriesController < ApplicationController
   def index
-    @countries = Country.all
+    @name = params[:search] || 'all'
+    @beers = Country.fetchData(@name)
   end
   def detail
     @id = params[:id]
